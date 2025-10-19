@@ -24,10 +24,7 @@ class MyinfoPage {
   fillEmployeeDetails(employId, otherId, driversLicenseNumber, expiryDate) {
     cy.get(this.selectorsList().genericField).eq(4).clear().type(employId);
     cy.get(this.selectorsList().genericField).eq(5).clear().type(otherId);
-    cy.get(this.selectorsList().genericField)
-      .eq(6)
-      .clear()
-      .type(driversLicenseNumber);
+    cy.get(this.selectorsList().genericField).eq(6).clear().type(driversLicenseNumber);
     cy.get(this.selectorsList().genericField).eq(7).clear().type(expiryDate);
     cy.get(this.selectorsList().dateCloseButton).click();
     cy.get(this.selectorsList().dateCloseButton2).click();
